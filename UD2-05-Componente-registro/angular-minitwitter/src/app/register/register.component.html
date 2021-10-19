@@ -1,0 +1,15 @@
+<form class="example-form">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Name</mat-label>
+    <input matInput placeholder="Write your name" [(ngModel)]='registerDto.username' name='username'>
+  </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Write your email" [(ngModel)]="registerDto.email" name="email">
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Password</mat-label>
+        <input matInput placeholder="Write your password" type="password" [(ngModel)]="registerDto.password" name="password">
+      </mat-form-field>
+      <button mat-raised-button color="primary" (click)="doRegister()">Register</button>
+  </form>
